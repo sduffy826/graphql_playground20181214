@@ -1,0 +1,13 @@
+type Person {
+  firstName: String!
+  lastName: String!  
+}
+
+type Query {
+	allPeople: [Person]
+}
+
+schema {
+	query: Query
+}
+
