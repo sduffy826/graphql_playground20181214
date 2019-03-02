@@ -1,0 +1,15 @@
+type Cat {
+  id: String!
+  name: String!
+  color: String!
+}
+
+type Query {
+	hello: String!
+	sean: String!
+	cat(name: String) : [Cat!]
+}
+
+schema {
+  query: Query
+}
